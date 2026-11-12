@@ -1,0 +1,69 @@
+
+/* NVIDIA-inspired theme: electric green, graphite and black */
+:root{
+  --ink:#f2f5ee;
+  --paper:#0b0e09;
+  --red:#76b900;
+  --muted:#a0aa98;
+  --line:#303b27;
+}
+body{background:#0b0e09;color:#f2f5ee}
+.grain{opacity:.07}
+.topbar{border-bottom-color:#293322}
+.brand-stamp{border-color:#76b900;color:#76b900}
+.case-status{color:#a0aa98}
+.live-dot{background:#76b900;box-shadow:0 0 0 4px #76b90030}
+.classified-tag{color:#76b900}
+.classified-tag span{border-color:#76b90088}
+.classified-tag span+span{color:#a0aa98;border-color:#526044}
+.eyebrow,.section-kicker,.case-number,.lane-label,.branch-label,.connector,.tiny-note{color:#76b900}
+h1 em{color:#76b900;text-shadow:3px 3px 0 #76b90025}
+.subtitle{color:#b7c0ae}
+.primary-btn{background:#76b900;color:#10150a;box-shadow:5px 5px 0 #d5f2a6}
+.primary-btn:hover{box-shadow:2px 2px 0 #d5f2a6}
+.disclaimer{color:#899581}
+.magnifier{background:#11170d;color:#76b900;border-color:#f2f5ee}
+.magnifier:after{background:#f2f5ee}
+.red-scribble{border-color:#76b900}
+.investigation{background:#141a10;border-color:#34422a;box-shadow:9px 10px 0 #26351a}
+.paper-card:before{border-color:#435237}
+.case-number span{color:#75806c}
+.progress-track{background:#293322}
+.progress-track span{background:#76b900}
+.hint{color:#a0aa98}
+.answer{border-color:#dce5d4;color:#f2f5ee}
+.answer.yes:hover{background:#76b900;color:#10150a;border-color:#76b900}
+.answer.no:hover{background:#dce5d4;color:#10150a}
+.step-foot{border-top-color:#303b27;color:#9aa58e}
+.step-foot button{color:#76b900}
+.flow-section{background:#11170d;border-color:#293322}
+.section-heading h2{color:#f2f5ee}
+.hand-note{color:#76b900}
+.flow-intro,.footnote{color:#a0aa98}
+.flow-lane{background:#171e12;border-color:#34422a;box-shadow:5px 5px 0 #26351a}
+.lane-label{border-bottom-color:#34422a}
+.node{background:#20291a;border-color:#aeb9a2;color:#f2f5ee}
+.node:hover{box-shadow:3px 3px 0 #76b90055}
+.branch-grid{border-left-color:#76b90099}
+.outcome.spy{color:#a5e34b;border-color:#76b900}
+.outcome.irs{color:#e6c65b;border-color:#b69a3b}
+.original{border-top-color:#34422a}
+.original summary{color:#76b900}
+.original img{border-color:#dce5d4}
+footer{color:#a0aa98}
+.footer-stamp{color:#76b900;border-color:#76b900}
+.result-overlay{background:#050704f2}
+.result-card{background:#151c10;color:#f2f5ee;box-shadow:12px 12px 0 #76b900}
+.close-result{color:#f2f5ee}
+.result-seal{border-color:#76b900;color:#76b900}
+.result-card h2{color:#76b900}
+.result-card>p:not(.eyebrow):not(.tiny-disclaimer){color:#c0cbb6}
+.share-btn{color:#dce5d4}
+.tiny-disclaimer{color:#9aa58e}
+.confetti i{background:#76b900}
+.confetti i:nth-child(3n){background:#d5f2a6}
+.confetti i:nth-child(3n+1){background:#f2f5ee}
+@media(max-width:760px){
+  .investigation{box-shadow:6px 7px 0 #26351a}
+  .flow-lane{box-shadow:4px 4px 0 #26351a}
+}
