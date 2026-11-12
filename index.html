@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e6">
+  <meta name="description" content="A completely unscientific, deeply suspicious girlfriend spy detector.">
+  <title>Is Your GF a Spy? — Totally Accurate Investigation Bureau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Special+Elite&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Totally Accurate Investigation Bureau home">
+      <span class="brand-stamp">TAIB</span><span>Totally Accurate<br>Investigation Bureau</span>
+    </a>
+    <div class="case-status"><span class="live-dot"></span> CASE FILE <b>#GF-001</b></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="classified-tag"><span>TOP SECRET</span><span>UNVERIFIED INTELLIGENCE</span></div>
+      <p class="eyebrow">THE FIELD GUIDE NOBODY ASKED FOR</p>
+      <h1>Is your GF<br><em>a SPY?</em></h1>
+      <p class="subtitle">(totally accurate, legally questionable)</p>
+      <div class="hero-doodle" aria-hidden="true">
+        <div class="magnifier"><span>?</span></div>
+        <div class="red-scribble"></div>
+        <span class="tiny-note">trust the process ↗</span>
+      </div>
+      <button class="primary-btn" id="startBtn"><span>START INVESTIGATION</span><b>→</b></button>
+      <p class="disclaimer">100% made-up science. 0% actual intelligence capability.</p>
+    </section>
+
+    <section class="investigation paper-card" id="investigation" aria-live="polite">
+      <div class="card-head">
+        <div><span class="section-kicker">ACTIVE INVESTIGATION</span><h2 id="stepTitle">First things first…</h2></div>
+        <div class="case-number">01 <span>/</span> 07</div>
+      </div>
+      <div class="progress-track"><span id="progress"></span></div>
+      <p class="question" id="question">What do you do?</p>
+      <p class="hint" id="hint">Choose carefully. The Bureau is watching. (Not really.)</p>
+      <div class="answers" id="answers">
+        <button class="answer yes" data-answer="yes">YES <span>↗</span></button>
+        <button class="answer no" data-answer="no">NO <span>↘</span></button>
+      </div>
+      <div class="step-foot"><span>⚑ FIELD AGENT MODE</span><button id="restartSmall">RESET CASE ↺</button></div>
+    </section>
+
+    <section class="flow-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE ORIGINAL MASTERPLAN</p><h2>Evidence board</h2></div>
+        <span class="hand-note">red string included*</span>
+      </div>
+      <p class="flow-intro">The exact same deeply flawed logic, now in a format your phone can survive.</p>
+      <div class="flow-map" id="flowMap">
+        <article class="flow-lane">
+          <span class="lane-label">ROUTE A · AI</span>
+          <div class="node start">What do you do?</div><div class="connector">↓</div>
+          <div class="node">AI?</div><div class="connector">YES ↓</div>
+          <div class="node">Is she a 10?</div>
+          <div class="branch-grid">
+            <div><span class="branch-label">YES</span><div class="node outcome spy">SPY</div></div>
+            <div><span class="branch-label">NO</span><div class="node">Is your company worth over $100M?</div>
+              <div class="connector">YES ↓</div><div class="node">Is she a good listener?</div>
+              <div class="branch-grid">
+                <div><span class="branch-label">NO</span><div class="node outcome">VC associate (worse)</div></div>
+                <div><span class="branch-label">YES</span><div class="node">Does she say your GPU is the highest she's ever seen?</div>
+                  <div class="branch-grid">
+                    <div><span class="branch-label">YES</span><div class="node outcome spy">SPY</div></div>
+                    <div><span class="branch-label">NO</span><div class="node outcome">Could still be a spy (keep watching)</div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="connector">NO ↓</div><div class="node outcome">You can relax (for now)</div>
+            </div>
+          </div>
+        </article>
+        <article class="flow-lane">
+          <span class="lane-label">ROUTE B · NOT AI</span>
+          <div class="node start">Not AI</div><div class="connector">↓</div>
+          <div class="node">Are you in the government?</div>
+          <div class="branch-grid">
+            <div><span class="branch-label">YES</span><div class="node">Does she avoid talking about Taiwan?</div>
+              <div class="branch-grid">
+                <div><span class="branch-label">YES</span><div class="node outcome spy">SPY</div></div>
+                <div><span class="branch-label">NO</span><div class="node">Does she ask you about classified documents?</div>
+                  <div class="branch-grid">
+                    <div><span class="branch-label">YES</span><div class="node outcome">🚨 VERY SUSPICIOUS</div></div>
+                    <div><span class="branch-label">NO</span><div class="node outcome">Probably not a spy</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div><span class="branch-label">NO</span><div class="node">Are you in crypto?</div>
+              <div class="branch-grid">
+                <div><span class="branch-label">NO</span><div class="node outcome">Probably a normal GF (rare)</div></div>
+                <div><span class="branch-label">YES</span><div class="node">Can she say "Kim Jong Un is a big pig"?</div>
+                  <div class="branch-grid">
+                    <div><span class="branch-label">NO</span><div class="node outcome spy">SPY (North Korean)</div></div>
+                    <div><span class="branch-label">YES</span><div class="node">Did you make more than $100k from crypto?</div>
+                      <div class="branch-grid">
+                        <div><span class="branch-label">YES</span><div class="node outcome irs">IRS agent 💸</div></div>
+                        <div><span class="branch-label">NO</span><div class="node outcome">Probably not a spy</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="footnote">*Red string is metaphorical. The Bureau is currently over budget.</p>
+      <details class="original">
+        <summary>View the original evidence supplied to the Bureau</summary>
+        <img src="assets/original-flowchart.jpg" alt="Original hand-drawn How To Tell If Your GF Is A SPY flowchart">
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-stamp">NOT AN ACTUAL GOVERNMENT AGENCY</div>
+    <p>Made with suspicion, questionable arrows & an alarming amount of confidence.</p>
+    <span>© TAIB · ALL RIGHTS RESERVED (PROBABLY)</span>
+  </footer>
+
+  <div class="result-overlay" id="resultOverlay" aria-hidden="true">
+    <div class="confetti" id="confetti"></div>
+    <div class="result-card">
+      <button class="close-result" id="closeResult" aria-label="Close result">×</button>
+      <div class="result-seal" id="resultSeal">CLASSIFIED</div>
+      <p class="eyebrow">INVESTIGATION COMPLETE</p>
+      <h2 id="resultTitle">SPY</h2>
+      <p id="resultText">The Bureau has reached a conclusion.</p>
+      <div class="result-actions">
+        <button class="primary-btn" id="againBtn">INVESTIGATE AGAIN ↺</button>
+        <button class="share-btn" id="shareBtn">SHARE THE FINDINGS ↗</button>
+      </div>
+      <p class="tiny-disclaimer">This result is a joke. Please do not conduct espionage investigations on your loved ones.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
